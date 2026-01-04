@@ -5,7 +5,7 @@ export function render(data) {
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>${data.title}</title>
+        <title>${data.title}${data.subtitle}</title>
         <meta name="og:title" content="${data.title}">
         <meta name="og:description" content="${data.description}">
         <meta name="og:image" content="">
@@ -21,12 +21,15 @@ export function render(data) {
       </head>
       <body>
         <main id="main">
-          <h1>${this.budoux(data.title)}</h1>
+          <hgroup>
+            <h1 style="margin-block-end: 0">${this.budoux(data.title)}</h1>
+            <p style="font-size: 1.425rem">${this.budoux(data.subtitle)}</p>
+          </hgroup>
           ${data.content}
         </main>
         <footer>
           <p>Copyright ${this.year()}, Okuto Oyama</p>
-          <p>Source : <a href="https://github.com/yamanoku/document-page-template/" target="_blank">yamanoku/document-page-template</a></p>
+          <p>Source : <a href="https://github.com/yamanoku/burikaigi-2026/" target="_blank">yamanoku/burikaigi-2026</a></p>
         </footer>
       </body>
     </html>
