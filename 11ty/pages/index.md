@@ -6,7 +6,7 @@ description: BuriKaigi 2025のyamanokuの発表資料
 lang: ja
 ---
 
-![スライドタイトル：たかがボタン、されどボタン～button要素から深ぼるボタンUIの定義について～](./images/title.png)
+![スライドタイトル：たかがボタン、されどボタン～button要素から深ぼるボタンUIの定義について～](images/title.png)
 
 ## はじめに
 
