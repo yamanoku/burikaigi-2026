@@ -195,12 +195,12 @@ dragPos:
 
 ---
 layout: image
-image: "./images/link-button-figma.png"
+image: "https://yamanoku.net/burikaigi-2026/images/link-button-figma.png"
 ---
 
 ---
 layout: image
-image: "./images/link-button-in-modal.png"
+image: "https://yamanoku.net/burikaigi-2026/images/link-button-in-modal.png"
 ---
 
 ---
@@ -252,7 +252,7 @@ layout: center
 
 ---
 layout: image
-image: "images/old-html-form-image.png"
+image: "https://yamanoku.net/burikaigi-2026/images/old-html-form-image.png"
 ---
 
 ---
@@ -628,12 +628,12 @@ layout: center
 
 ---
 layout: image
-image: '/images/ai-create-button.png'
+image: 'https://yamanoku.net/burikaigi-2026/images/ai-create-button.png'
 ---
 
 ---
 layout: image
-image: '/images/good-button.png'
+image: 'https://yamanoku.net/burikaigi-2026/images/good-button.png'
 ---
 
 ---
