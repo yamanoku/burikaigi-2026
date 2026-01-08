@@ -21,6 +21,8 @@ htmlAttrs:
 BuriKaigi 2026 Day2 | <time datetime="2026-01-10">2026-01-10</time>
 </div>
 
+[ドキュメントページ](https://yamanoku.net/burikaigi-2026/)
+
 <div class="absolute bottom-16">
   <span class="text-6 font-700">
     やまのく（yamanoku）
