@@ -67,3 +67,22 @@ blockquote + .slidev-code-wrapper,
 .slidev-page-42 .place-content-center {
   place-content: center !important;
 }
+
+.slidev-layout blockquote {
+  border-inline-start: 6px solid rgba(90, 190, 255);
+  border-radius: 0;
+  padding-inline: 1rem;
+  background-color: transparent;
+}
+
+.slidev-layout blockquote p {
+  line-height: 1.75rem;
+}
+
+.slidev-layout thead {
+  background-color: rgba(210, 210, 210);
+}
+
+.slidev-layout tr {
+  border-color: rgba(21, 32, 43);
+}

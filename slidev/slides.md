@@ -37,10 +37,11 @@ layout: center
 
 ---
 dragPos:
-  foo: 477,44,468,277
+  foo: 446,44,468,277
 ---
 
 <v-drag pos="foo">
+<div text="6" font="bold" class="text-center">今日の発表を𝕏にポストしよう！</div>
 <img src="./images/x_post_QR.png" alt="QRコード" width="480">
 </v-drag>
 
@@ -85,9 +86,13 @@ layout: center
 
 # シグニファイア
 
+## ボタンが無効であるかどうか
+
 <div>
   <DisabledButton />
 </div>
+
+## アイコンで何ができるかを表す
 
 <div mt="10" class="grid auto-cols-max grid-flow-col gap-4">
   <IconButton tooltip="ファイルを開く">
@@ -244,6 +249,12 @@ layout: center
 | `reset` | フォームをリセットする |
 | `button` | **何もしない（スクリプト用）** |
 
+
+---
+layout: image
+image: "images/old-html-form-image.png"
+---
+
 ---
 layout: center
 ---
@@ -252,17 +263,11 @@ layout: center
 
 # HTML 2.0 <br> `<input type="submit">`
 
-# HTML 4.0 <br> `<button type="submit">`
+# HTML 4.0 <br> `<button>`
 
 </div>
 
 <v-drag-arrow pos="484,239,1,59"/>
-
----
-layout: image
-image: "images/old-html-form-image.png"
----
-
 
 ---
 layout: center
@@ -372,11 +377,13 @@ layout: center
 
 ## Button
 
-> "A button is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation."
+> "A button is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation."<br>
+> （ボタンは、フォーム送信、ダイアログを開く、アクションのキャンセル、削除操作など、アクションやイベントをトリガーするウィジェットです）
 
 ## Link
 
-> "A link widget provides an interactive reference to a resource. The target resource can be either external or local."
+> "A link widget provides an interactive reference to a resource. The target resource can be either external or local."<br>
+> （リンクは、リソースへの対話的な参照を提供します。対象リソースは外部でもローカルでも構いません）
 
 ---
 layout: center
@@ -577,11 +584,13 @@ layout: center
 
 ## Using ARIA
 
-> If you can use a native HTML element or attribute with the semantics and behavior you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.
+> If you can use a native HTML element or attribute with the semantics and behavior you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.<br>
+> （必要なセマンティクスと振る舞いを持つネイティブHTML要素が使えるなら、ARIAで無理やり作るのではなく、それを使ってください）
 
 ## ARIA Authoring Practices Guide
 
-> No ARIA is better than Bad ARIA
+> No ARIA is better than Bad ARIA<br>
+> （悪いARIAより、ARIAを使わない方がマシである）
 
 ---
 

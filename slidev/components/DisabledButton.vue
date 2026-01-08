@@ -1,6 +1,8 @@
 <template>
-  <button type="submit">送信する</button>
-　<button type="submit" disabled>送信する</button>
+  <div class="grid auto-cols-max grid-flow-col gap-4">
+    <button type="submit">送信する</button>
+    <button type="submit" disabled>送信する</button>
+  </div>
 </template>
 
 <style scoped>
@@ -15,6 +17,7 @@ button {
 }
 button:disabled {
   background-color: #ccc;
+  color: black;
   cursor: not-allowed;
 }
 </style>

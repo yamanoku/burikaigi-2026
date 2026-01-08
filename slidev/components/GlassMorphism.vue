@@ -2,13 +2,14 @@
 </script>
 
 <template>
-  <div
+  <button
+    type="button"
     class="glass-card glass-card--blur-heavy"
   >
     <div class="glass-card__content">
       グラスモーフィズムボタン
     </div>
-  </div>
+  </button>
 </template>
 
 <style scoped>
@@ -21,6 +22,7 @@
   background: var(--glass-bg);
   border-radius: var(--glass-radius);
   padding: 24px;
+  width: 100%;
   text-align: center;
   
   /* グラスモーフィズムの核心：半透明ボーダー */

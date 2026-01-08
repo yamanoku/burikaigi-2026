@@ -11,6 +11,7 @@ const toggle = () => {
 <template>
   <div class="button-base">
     <button
+      type="button"
       class="quiz-button"
       :class="{ pressed: isPressed }"
       :aria-pressed="isPressed"
