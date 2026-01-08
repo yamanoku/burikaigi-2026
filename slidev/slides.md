@@ -9,6 +9,9 @@ seoMeta:
   ogDescription: BuriKaigi 2026のyamanokuの発表資料
   ogImage: https://yamanoku.net/buriKaigi-2026/images/ogp-image.png
   twitterCard: summary_large_image
+routerMode: hash
+htmlAttrs:
+  lang: ja
 ---
 
 <h1 mt="32">たかがボタン、されどボタン</h1>
