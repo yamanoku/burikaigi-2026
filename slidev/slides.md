@@ -14,10 +14,10 @@ htmlAttrs:
   lang: ja
 ---
 
-<h1 mt="32">たかがボタン、されどボタン</h1>
+<h1 mt="28">たかがボタン、されどボタン</h1>
 <div class="text-10 font-700">button要素から深ぼるボタンUIの定義について</div>
 
-<div mt="5">
+<div mt="4">
 BuriKaigi 2026 Day2 | <time datetime="2026-01-10">2026-01-10</time>
 </div>
 
