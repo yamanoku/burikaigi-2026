@@ -6,6 +6,8 @@ description: BuriKaigi 2025のyamanokuの発表資料
 lang: ja
 ---
 
+![スライドタイトル：たかがボタン、されどボタン～button要素から深ぼるボタンUIの定義について～](../images/title.png)
+
 ## はじめに
 
 皆さん、今日はどうやってこの会場に来ましたか？電車の方、スマホで乗換案内アプリを使いましたか？車の方、カーナビを操作しましたか？
@@ -38,9 +40,9 @@ lang: ja
 
 単なるボタンは押せそうに見えますが、これが`disabled`、つまり非活性になっている場合あれば「押せない」というヒントが提示されていると分かります。特定のアイコンが書かれたボタンがあればそれに対応したボタンだと分かります。ボタン自体の形を変えることで、どのような操作が可能かを示すことができたりします。
 
-ボタンというものは必ずしも現実世界にあるものだけを指すものではありません。ソフトウェアエンジニアであれば毎日見かけるボタン、すなわちOSのGUIにおけるボタンも挙げられます。
+ボタンというものは必ずしも現実世界にあるものだけを指すものではありません。ソフトウェアエンジニアであれば毎日見かけるボタン、すなわちOSのGUIにおけるインターフェースも挙げられます。
 
-現在はGUIで操作することに馴染みがありますが、それ以前の時代では黒い画面に緑色の文字を打ち込む「コマンドライン」が主流でした。`cd /home/documents` のようなコマンドを知らなければ、ファイルを開くこともできませんでした。GUIでは画面にアイコンが並び、マウスでクリックできる。ウィンドウを開いたり閉じたりできる。そして何より、「押せそうに見えるもの」を押せば何かが起こるという、直感的な操作が可能になったのです。
+現在はGUIで操作することに馴染みがありますが、それ以前の時代では黒い画面に緑色の文字を打ち込む「コマンドライン」が主流でした。`cd /home/documents` のようなコマンドを知らなければ、ファイルを開くこともできませんでした。GUIでは画面にアイコンが並び、マウスでクリックできる。ウィンドウを開いたり閉じたりできる。そして何より、「押せそうに見えるもの」を押せば何かが起こるという直感的な操作が可能になったのです。
 
 現実世界でボタンが「押せそうに見えるもの」があったからこそGUIの一部として採用されたのだと思います。
 
@@ -153,6 +155,11 @@ HTMLの仕様観点やガイドラインより、なぜこれらが問題なの�
 仕様書には次のように書かれています：
 
 > The attribute's missing value default and invalid value default are both the Auto state.
+> A button element is said to be a submit button if any of the following are true:
+
+> the type attribute is in the Auto state, both the command and commandfor content attributes are not present, and the parent node is not a select element; or
+
+> the type attribute is in the Submit Button state.
 
 つまり、`<button>` と書くだけで、`<button type="submit">` と同じ意味になるのです。
 
@@ -172,10 +179,9 @@ HTMLの仕様観点やガイドラインより、なぜこれらが問題なの�
   <button onclick="searchAddress()">住所検索</button>
   <button>送信する</button>
 </form>
+```
 
-<form>
-</form>
-
+```html
 <!-- 🟢 用途に分けてtype指定 -->
 <form>
   <button type="button" onclick="searchAddress()">住所検索</button>
@@ -187,10 +193,12 @@ HTMLの仕様観点やガイドラインより、なぜこれらが問題なの�
 
 ただ、これを人力で防ぐのは大変なので各種Linterのルールでチェックしていくことをお勧めします。
 
+<style>article::before{display:none !important;}</style>
 <article style="border-width:1px; border-style:solid; border-color:var(--y-arcticle-border-color); padding-top:var(--y-rhythm-3); padding-left:var(--y-rhythm-3); padding-right:var(--y-rhythm-3);">
-<style>article::before{ display:none !important; }</style>
 
-余談ですが`type`属性には、仕様として決定はしていないものの、新たな属性値を追加したいという要望が出ています。Web Share APIを判別するための`type="share"`やボタンが押されていることを判別する`type="press"`といったものがあります。また`<button>`のデフォルト挙動を`type="submit"`ではなく`type="button"`にできないかという声も上がっています。
+余談ですが`type`属性には、仕様として決定はしていないものの、新たな属性値を追加したいという要望が出ています。Web Share APIを判別するための`type="share"`やボタンが押されていることを判別する`type="press"`といったものがあります。
+
+また`<button>`のデフォルト挙動を`type="submit"`ではなく`type="button"`にできないかという声も上がっています。
 
 これらはいずれもWeb標準の挙動としてはまだ確立されていませんが、HTMLの仕様が現在進行形で更新されていくものである以上、今後の動向には注目していきたいです。
 
