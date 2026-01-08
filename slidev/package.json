@@ -8,6 +8,7 @@
     "export": "slidev export"
   },
   "dependencies": {
+    "@iconify-json/twemoji": "catalog:slidev",
     "@slidev/cli": "catalog:slidev",
     "@slidev/theme-apple-basic": "catalog:slidev",
     "@slidev/theme-default": "catalog:slidev",

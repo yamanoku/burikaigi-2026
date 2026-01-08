@@ -11,6 +11,7 @@ catalogs:
   root:
     gh-pages: 6.3.0
   slidev:
+    '@iconify-json/twemoji': 1.2.5
     '@slidev/cli': 52.11.1
     '@slidev/theme-default': 0.25.0
     '@slidev/theme-apple-basic': 0.25.1
