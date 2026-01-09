@@ -41,6 +41,10 @@
   text-align: center;
 }
 
+.slidev-layout.center h1 + h2 {
+  text-align: center;
+}
+
 .slidev-layout.section h1 {
   font-weight: 700;
 }
