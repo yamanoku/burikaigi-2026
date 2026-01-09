@@ -161,7 +161,8 @@ A button element is said to be a submit button if any of the following are true:
 <p>ただ、これを人力で防ぐのは大変なので各種Linterのルールでチェックしていくことをお勧めします。</p>
 <style>article::before{display:none !important;}</style>
 <article style="border-width:1px; border-style:solid; border-color:var(--y-arcticle-border-color); padding-top:var(--y-rhythm-3); padding-left:var(--y-rhythm-3); padding-right:var(--y-rhythm-3);">
-<p>余談ですが<code>type</code>属性には、仕様として決定はしていないものの、新たな属性値を追加したいという要望が出ています。Web Share APIを判別するための<code>type=&quot;share&quot;</code>やボタンが押されていることを判別する<code>type=&quot;press&quot;</code>といったものがあります。</p>
+<p>余談ですが<code>type</code>属性には、仕様として決定はしていないものの、新たな属性値を追加したいという要望があったりします。</p>
+<p>現在は廃止となってしまったWeb Share APIを判別するための<code>type=&quot;share&quot;</code>やセレクトボックス内でリストボックスのように開閉させるための<code>type=&quot;selectlist&quot;</code>、現在提案中のものとしてボタンが押されていることを判別する<code>type=&quot;press&quot;</code>といったものがあります。</p>
 <p>また<code>&lt;button&gt;</code>のデフォルト挙動を<code>type=&quot;submit&quot;</code>ではなく<code>type=&quot;button&quot;</code>にできないかという声も上がっています。</p>
 <p>これらはいずれもWeb標準の挙動としてはまだ確立されていませんが、HTMLの仕様が現在進行形で更新されていくものである以上、今後の動向には注目していきたいです。</p>
 </article>
@@ -235,7 +236,7 @@ link.addEventListener('keydown', (e) =&gt; {
 </code></pre>
 <p>Spaceキーのイベントを手動でハンドリングし、スクロールを防止し、クリックイベントを発火させる、という実装を加えてみました。</p>
 <p>しかし、これで本当に完璧なボタンになるでしょうか。リンクは右クリック時や一部キーを使うことでボタンにはない挙動を実現します。これらも防ぐ必要があります。</p>
-<p>これらの実装を加えてようやくボタンに近い挙動となります。ですが、ここまで考慮してまで<code>&lt;a&gt;</code>でボタンを実装する意味は本当にあるのでしょうか。</p>
+<p>これらの実装を加えてようやくボタンに近い挙動となります。ですが、<strong>ここまで考慮してまで<code>&lt;a&gt;</code>でボタンを実装する意味</strong>は本当にあるのでしょうか。</p>
 <p>ブラウザごとでの挙動が異なったり、把握していないものもあったりするので、<code>&lt;a&gt;</code>でボタンのように実装するのはやめましょう。</p>
 <p>この教訓から得られることから、<code>&lt;button&gt;</code>でリンクのような挙動を表現するのも向いていないことも言えます。理由は同様にリンクのための挙動を<code>&lt;button&gt;</code>で実装していく必要があるからです。</p>
 <p>再掲となりますが、ナビゲーションには<code>&lt;a&gt;</code>を使い、アクションとしては<code>&lt;button&gt;</code>で実装するようにしましょう。</p>
@@ -243,8 +244,8 @@ link.addEventListener('keydown', (e) =&gt; {
 <p>最後に<code>&lt;div&gt;</code>で実装したものの問題点についても紹介します。</p>
 <p>見た目はボタンUIのように実装されたものの、これはボタンとは言えません。単なるクリックできる<code>div</code>要素です。</p>
 <p>これがなぜボタンと言えないのか。それはHTMLネイティブ要素がもつ<strong>暗黙的な役割</strong>が関係しています。</p>
-<p><code>&lt;button&gt;</code>は「ボタン」という役割、<code>&lt;a&gt;</code>は「リンク」という役割を持っています。他にも<code>&lt;h1&gt;</code>であれば「見出し」、<code>&lt;p&gt;</code>であれば「段落」という役割を持っています。一方で<code>&lt;div&gt;</code>については他と違って明確な役割をもっていません。</p>
-<p>これは見た目上では分かりませんが、ブラウザを音声で読み上げるスクリーンリーダーといった支援技術にとっては重要なものとなります。</p>
+<p><code>&lt;button&gt;</code>は「ボタン」という役割、<code>&lt;a&gt;</code>は「リンク」という役割を持っています。他にも<code>&lt;h1&gt;</code>であれば「見出し」、<code>&lt;p&gt;</code>であれば「段落」という役割を持っています。一方で<code>&lt;div&gt;</code>については他と違って明確な名前のある役割をもっていません。</p>
+<p>暗黙的な役割というのは見た目上では分かりませんが、ブラウザを音声で読み上げるスクリーンリーダーといった支援技術にとっては重要なものとなります。</p>
 <p>スクリーンリーダーで要素にアクセスすると、その要素がもつ役割を最初に読み上げ、次のその要素が持つ内容を読み上げます。</p>
 <pre><code class="language-html">&lt;button type=&quot;button&quot; onclick=&quot;openDialog()&quot;&gt;ダイアログを開く&lt;/button&gt;
 </code></pre>
