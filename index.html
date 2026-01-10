@@ -123,7 +123,7 @@
 </tr>
 <tr>
 <td><code>button</code></td>
-<td><strong>何もしない（スクリプト用）</strong></td>
+<td>何もしない（スクリプト用）</td>
 </tr>
 </tbody>
 </table>
@@ -162,8 +162,8 @@ A button element is said to be a submit button if any of the following are true:
 <style>article::before{display:none !important;}</style>
 <article style="border-width:1px; border-style:solid; border-color:var(--y-arcticle-border-color); padding-top:var(--y-rhythm-3); padding-left:var(--y-rhythm-3); padding-right:var(--y-rhythm-3);">
 <p>余談ですが<code>type</code>属性には、仕様として決定はしていないものの、新たな属性値を追加したいという要望があったりします。</p>
-<p>現在は廃止となってしまったWeb Share APIを判別するための<code>type=&quot;share&quot;</code>やセレクトボックス内でリストボックスのように開閉させるための<code>type=&quot;selectlist&quot;</code>、現在提案中のものとしてボタンが押されていることを判別する<code>type=&quot;press&quot;</code>といったものがあります。</p>
-<p>また<code>&lt;button&gt;</code>のデフォルト挙動を<code>type=&quot;submit&quot;</code>ではなく<code>type=&quot;button&quot;</code>にできないかという声も上がっています。</p>
+<p>現在は廃止となってしまったWeb Share APIを判別するための<code>type=&quot;share&quot;</code><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>やセレクトボックス内でリストボックスのように開閉させるための<code>type=&quot;selectlist&quot;</code><sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>、現在提案中のものとしてボタンが押されていることを判別する<code>type=&quot;press&quot;</code><sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>といったものがあります。</p>
+<p>また<code>&lt;button&gt;</code>のデフォルト挙動を<code>type=&quot;submit&quot;</code>ではなく<code>type=&quot;button&quot;</code>にできないかという声も上がっています<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>。</p>
 <p>これらはいずれもWeb標準の挙動としてはまだ確立されていませんが、HTMLの仕様が現在進行形で更新されていくものである以上、今後の動向には注目していきたいです。</p>
 </article>
 <h2>ボタンとリンクの本質的な違い</h2>
@@ -313,6 +313,24 @@ link.addEventListener('keydown', (e) =&gt; {
 <ul>
 <li><a href="https://adrianroselli.com/2022/04/brief-note-on-buttons-enter-and-space.html">Brief Note on Buttons, Enter, and Space — Adrian Roselli</a></li>
 </ul>
+<h2>参考書籍</h2>
+<ul>
+<li><a href="https://www.sociomedia.co.jp/10644">ABOUT FACE インタラクションデザインの本質</a></li>
+<li><a href="https://www.borndigital.co.jp/book/25999/">HTML解体新書</a></li>
+</ul>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>https://github.com/WICG/proposals/issues/11 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>https://open-ui.org/components/customizableselect/ <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>https://open-ui.org/components/press-button.explainer/ <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p><a href="https://github.com/whatwg/html/issues/10462">Investigate making the invalid state of <code>&lt;button type&gt;</code> <em>not</em> submit · Issue #10462 · whatwg/html</a> <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
         </main>
         <footer>
