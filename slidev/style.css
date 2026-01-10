@@ -90,3 +90,7 @@ blockquote + .slidev-code-wrapper,
 .slidev-layout tr {
   border-color: rgba(21, 32, 43);
 }
+
+.dark .slidev-layout thead {
+  color: black
+}

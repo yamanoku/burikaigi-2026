@@ -51,10 +51,6 @@ const goNext = () => {
     currentStep.value++;
   }
 };
-
-const togglePanel = () => {
-  isExpanded.value = !isExpanded.value;
-};
 </script>
 
 <template>

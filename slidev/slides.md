@@ -29,6 +29,10 @@ BuriKaigi 2026 Day2 | <time datetime="2026-01-10">2026-01-10</time>
   </span>
 </div>
 
+<div class="absolute top-6 left-6">
+  <img src="./images/burikaigi.png" alt="BuriKaigi 2026" width="160">
+</div>
+
 ---
 layout: center
 ---
@@ -51,12 +55,12 @@ layout: center
 
 ---
 dragPos:
-  foo: 446,44,468,277
+  foo: 463,22,468,277
 ---
 
 <v-drag pos="foo">
-<div text="6" font="bold" class="text-center">今日の発表を𝕏にポストしよう！</div>
-<img src="./images/x_post_QR.png" alt="QRコード" width="480">
+  <div text="6" font="bold" class="text-center">この発表を𝕏へポストしてみよう！</div>
+  <img src="./images/x_post_QR.png" alt="QRコード" width="480">
 </v-drag>
 
 <v-click> 
@@ -550,9 +554,9 @@ link.addEventListener('contextmenu', (e) => {
 layout: center
 ---
 
-# <twemoji-heavy-multiplication-x /> `<a>`
+# <twemoji-person-gesturing-no-light-skin-tone /> `<a>`
 
-# <twemoji-hollow-red-circle /> `<button>`
+# <twemoji-person-gesturing-ok-light-skin-tone /> `<button>`
 
 ---
 layout: center
