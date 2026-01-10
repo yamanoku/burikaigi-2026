@@ -202,9 +202,9 @@ HTMLの仕様観点やガイドラインより、なぜこれらが問題なの�
 
 現在は廃止となってしまったWeb Share APIを判別するための`type="share"`[^1]やセレクトボックス内でリストボックスのように開閉させるための`type="selectlist"`[^2]、現在提案中のものとしてボタンが押されていることを判別する`type="press"`[^3]といったものがあります。
 
-[^1]: https://github.com/WICG/proposals/issues/11
-[^2]: https://open-ui.org/components/customizableselect/
-[^3]: https://open-ui.org/components/press-button.explainer/
+[^1]: [Share Button Type · Issue #11 · WICG/proposals](https://github.com/WICG/proposals/issues/11)
+[^2]: [Customizable Select Element (Explainer) | Open UI](https://open-ui.org/components/customizableselect/)
+[^3]: [Press Buttons (Explainer) | Open UI](https://open-ui.org/components/press-button.explainer/)
 
 また`<button>`のデフォルト挙動を`type="submit"`ではなく`type="button"`にできないかという声も上がっています[^4]。
 
