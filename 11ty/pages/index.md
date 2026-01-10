@@ -150,7 +150,7 @@ HTMLの仕様観点やガイドラインより、なぜこれらが問題なの�
 |--------|------|
 | `submit` | フォームを送信する |
 | `reset` | フォームをリセットする |
-| `button` | **何もしない（スクリプト用）** |
+| `button` | 何もしない（スクリプト用） |
 
 ここで重要なのは`type`属性を省略した場合のデフォルト値です。
 
@@ -200,9 +200,15 @@ HTMLの仕様観点やガイドラインより、なぜこれらが問題なの�
 
 余談ですが`type`属性には、仕様として決定はしていないものの、新たな属性値を追加したいという要望があったりします。
 
-現在は廃止となってしまったWeb Share APIを判別するための`type="share"`やセレクトボックス内でリストボックスのように開閉させるための`type="selectlist"`、現在提案中のものとしてボタンが押されていることを判別する`type="press"`といったものがあります。
+現在は廃止となってしまったWeb Share APIを判別するための`type="share"`[^1]やセレクトボックス内でリストボックスのように開閉させるための`type="selectlist"`[^2]、現在提案中のものとしてボタンが押されていることを判別する`type="press"`[^3]といったものがあります。
 
-また`<button>`のデフォルト挙動を`type="submit"`ではなく`type="button"`にできないかという声も上がっています。
+[^1]: https://github.com/WICG/proposals/issues/11
+[^2]: https://open-ui.org/components/customizableselect/
+[^3]: https://open-ui.org/components/press-button.explainer/
+
+また`<button>`のデフォルト挙動を`type="submit"`ではなく`type="button"`にできないかという声も上がっています[^4]。
+
+[^4]: [Investigate making the invalid state of `<button type>` _not_ submit · Issue #10462 · whatwg/html](https://github.com/whatwg/html/issues/10462)
 
 これらはいずれもWeb標準の挙動としてはまだ確立されていませんが、HTMLの仕様が現在進行形で更新されていくものである以上、今後の動向には注目していきたいです。
 
@@ -391,3 +397,8 @@ APGにも「No ARIA is better than Bad ARIA」、ARIA無しのほうが、悪い
 ### Adrian Roselli
 
 - [Brief Note on Buttons, Enter, and Space — Adrian Roselli](https://adrianroselli.com/2022/04/brief-note-on-buttons-enter-and-space.html)
+
+## 参考書籍
+
+- [ABOUT FACE インタラクションデザインの本質](https://www.sociomedia.co.jp/10644)
+- [HTML解体新書](https://www.borndigital.co.jp/book/25999/)

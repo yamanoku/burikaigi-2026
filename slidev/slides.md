@@ -29,8 +29,8 @@ BuriKaigi 2026 Day2 | <time datetime="2026-01-10">2026-01-10</time>
   </span>
 </div>
 
-<div class="absolute top-6 left-6">
-  <img src="./images/burikaigi.png" alt="BuriKaigi 2026" width="160">
+<div class="absolute bottom-12 right-12">
+  <img src="./images/burikaigi.png" alt="BuriKaigi 2026" width="120">
 </div>
 
 ---
