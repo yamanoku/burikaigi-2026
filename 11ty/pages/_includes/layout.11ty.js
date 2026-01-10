@@ -8,7 +8,7 @@ export function render(data) {
         <title>${data.title}${data.subtitle}</title>
         <meta name="og:title" content="${data.title}">
         <meta name="og:description" content="${data.description}">
-        <meta name="og:image" content="">
+        <meta name="og:image" content="https://yamanoku.net/burikaigi-2026/images/og-image.png">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@yamanoku">
         <meta name="twitter:image:alt" content="">

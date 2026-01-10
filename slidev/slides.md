@@ -7,7 +7,7 @@ fonts:
   sans: Roboto, "Noto Sans JP"
 seoMeta:
   ogDescription: BuriKaigi 2026のyamanokuの発表資料
-  ogImage: https://yamanoku.net/buriKaigi-2026/images/og-image.png
+  ogImage: https://yamanoku.net/burikaigi-2026/images/og-image.png
   twitterCard: summary_large_image
 routerMode: hash
 htmlAttrs:
