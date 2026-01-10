@@ -6,12 +6,12 @@ export function render(data) {
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>${data.title}${data.subtitle}</title>
-        <meta name="og:title" content="${data.title}">
+        <meta name="og:title" content="${data.title}${data.subtitle}">
         <meta name="og:description" content="${data.description}">
         <meta name="og:image" content="https://yamanoku.net/burikaigi-2026/images/og-image.png">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@yamanoku">
-        <meta name="twitter:image:alt" content="">
+        <meta name="twitter:image:alt" content="${data.title}${data.subtitle}">
         <meta property="og:locale" content="${data.lang}">
         <link rel="stylesheet" href="https://cdn.skypack.dev/yama-normalize">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
